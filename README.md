@@ -26,8 +26,8 @@ Aplicación para el manejo de logística del campamento Patrones Hermosos.
 
 ### Environment URLS
 
-* **Production** - [TBD](TBD)
-* **Development** - [TBD](TBD)
+* **Production** - [localhost:3000](https://localhost:3000)
+* **Development** - [localhost:80](https://localhost:80)
 
 ### Da team
 
@@ -43,10 +43,9 @@ Aplicación para el manejo de logística del campamento Patrones Hermosos.
 
 You should ask for access to this tools if you don't have it already:
 
-* [Github repo](https://github.com/)
+* [Github repo](https://github.com/ProyectoIntegrador2018/patrones_hermosos_frontend)
 * [Backlog](https://github.com/ProyectoIntegrador2018/patrones_hermosos/projects/1)
-* [Heroku](https://crowdfront-staging.herokuapp.com/)
-* [Documentation](https://drive.com)
+* [Documentation](https://drive.google.com/open?id=1d96uJnjeu13aSVAOIVgP4_Rpif_TdYBF)
 
 ## Development
 
@@ -57,7 +56,7 @@ After installing please you can follow this simple steps:
 Clone this repository into your local machine
 
 ```bash
-$ git clone git@github.com:IcaliaLabs/crowdfront.git
+$ git clone git@github.com:ProyectoIntegrador2018/patrones_hermosos_frontend.git
 ```
 
 #### Running changes locally
