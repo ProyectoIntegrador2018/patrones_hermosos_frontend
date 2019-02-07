@@ -9,13 +9,7 @@ Aplicación para el manejo de logística del campamento Patrones Hermosos.
 * [Da Team](#team)
 * [Management resources](#management-resources)
 * [Setup the project](#setup-the-project)
-* [Running the stack for development](#running-the-stack-for-development)
 * [Stop the project](#stop-the-project)
-* [Restoring the database](#restoring-the-database)
-* [Debugging](#debugging)
-* [Running specs](#running-specs)
-* [Checking code for potential issues](#checking-code-for-potential-issues)
-
 
 ### Client Details 
 
@@ -39,7 +33,7 @@ Aplicación para el manejo de logística del campamento Patrones Hermosos.
 | Rubén de la Peña | ruben.dlpena [gmail.com] | Development, Project Manager |
 
 
-### Management tools
+### Management resources
 
 You should ask for access to this tools if you don't have it already:
 
@@ -85,4 +79,11 @@ $ npm run build
 
 ```bash
 $ start nginx
+```
+
+### Stop the project
+Whether you are running the development or production version, you can stop the server by using:
+
+```bash
+$ Ctrl + C
 ```
