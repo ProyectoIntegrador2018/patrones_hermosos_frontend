@@ -17,7 +17,7 @@ Aplicación para el manejo de logística del campamento Patrones Hermosos.
 * [Checking code for potential issues](#checking-code-for-potential-issues)
 
 
-### Client Details
+### Client Details 
 
 | Name               | Email             | Role |
 | ------------------ | ----------------- | ---- |
