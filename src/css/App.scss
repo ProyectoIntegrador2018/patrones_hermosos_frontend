@@ -1,3 +1,7 @@
+// @include monospace();
+// @include monospace(300);
+/** @color Solid black */
+$gray: #ddd;
 .App {
 	text-align: center;
 	color: red;
@@ -11,7 +15,6 @@
 		}
 	}
 }
-
 
 .App-logo {
 	animation: App-logo-spin infinite 20s linear;
