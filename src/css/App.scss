@@ -1,68 +1,12 @@
 // @include monospace();
 // @include monospace(300);
-/** @color Primary Blue */
-$primary: #4357ad;
 
-/** @color Secondary Dark Blue */
-$secondary: #160c28;
+@import "mixins";
+@import "colors";
 
-/** @color Background White */
-$background: #ffffff;
-
-/** @color Accent Baby Pink */
-$accent-babypink: #dec3be;
-
-/** @color Accent Pink */
-$accent-pink: #c41552;
-
-/**
- * @section Grayscale
- * @color Whitesmoke
- */
-$color-whitesmoke: #EFEFEF;
-
-/**
- * @section Grayscale
- * @color Light Gray
- */
-$color-lightgray: #D8D8D8;
-
-/**
- * @section Grayscale
- * @color Gray
- */
-$color-gray: #9B9B9B;
-
-/**
- * @section Grayscale
- * @color Dark Gray
- */
-$color-darkgray: #4A4A4A;
-
-/**
- * @section Grayscale
- * @color Black
- */
-$color-black: #000000;
-
-@import url("https://fonts.googleapis.com/css?family=Inconsolata");
-@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
-
-/**
- * Set the Helvetica font face with an optional font weight.
- *
- * @mixin
- * @section Fonts
- * @param $weight
- *  The font weight to be used.
- * @example
- *  @include helvetica();
- *  @include helvetica(300);
- */
- @mixin helvetica ( $weight : 400) {
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: $weight;
-  }
+body, p, span {
+	@include helvetica();
+}
 
 /**
  * Paragraphs should be plain and simple. Indentation goes to the right for the sake of readability.
@@ -83,7 +27,7 @@ p{}
  *  	Cool primary button
  * 	</button>
  */
-button.ui.primary.button{ 
+button.ui.primary.button { 
 	background-color: $primary !important;
 }
 

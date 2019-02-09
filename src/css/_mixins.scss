@@ -1,0 +1,17 @@
+/**
+ * Set the Helvetica font face with an optional font weight.
+ *
+ * @mixin
+ * @section Fonts
+ * @param $weight
+ *  The font weight to be used.
+ * @example
+ *  @include helvetica();
+ *  @include helvetica(400);
+ */
+ @mixin helvetica ( $weight : 400) {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: $weight;
+}
+
+
