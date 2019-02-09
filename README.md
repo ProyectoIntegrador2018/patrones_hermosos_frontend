@@ -1,6 +1,6 @@
 # Patrones Hermosos Front-End
 
-Aplicación para el manejo de logística del campamento Patrones Hermosos.
+Logistics management web application for the Beautiful Patterns summer camp.
 
 ## Table of contents
 
