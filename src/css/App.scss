@@ -2,6 +2,43 @@
 // @include monospace(300);
 /** @color Solid black */
 $gray: #ddd;
+
+/**
+ * @atom Headers
+ * @section Headers
+ * @markup
+ *  <h1>Header H1</h1>
+ *  <h2>Header H2</h2>
+ *  <h3>Header H3</h3>
+ *  <h4>Header H4</h4>
+ */
+h1 {
+  color: #ff0000 !important;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  line-height: 1.28571429em;
+  margin: calc(2rem -  0.14285714em ) 0em 1rem;
+  font-weight: bold;
+  padding: 0em;
+}
+
+/**
+ * @atom Button
+ * @section Navigation > Buttons
+ * @modifiers
+ *  .button--alert an alert button
+ * @markup
+ *  <button class="button">
+ *    A button
+ *  </button>
+ *  <button class="button button--alert">
+ *    An alert button
+ *  </button>
+ */
+.button {
+ &.button--alert { /* ... */ }
+}
+
+
 .App {
 	text-align: center;
 	color: red;
