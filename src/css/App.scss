@@ -1,7 +1,49 @@
 // @include monospace();
 // @include monospace(300);
-/** @color Solid black */
-$gray: #ddd;
+/** @color Primary Blue */
+$primary: #4357ad;
+
+/** @color Secondary Dark Blue */
+$secondary: #160c28;
+
+/** @color Background White */
+$background: #ffffff;
+
+/** @color Accent Baby Pink */
+$accent-babypink: #dec3be;
+
+/** @color Accent Pink */
+$accent-pink: #c41552;
+
+/**
+ * @section Grayscale
+ * @color Whitesmoke
+ */
+$color-whitesmoke: #EFEFEF;
+
+/**
+ * @section Grayscale
+ * @color Light Gray
+ */
+$color-lightgray: #D8D8D8;
+
+/**
+ * @section Grayscale
+ * @color Gray
+ */
+$color-gray: #9B9B9B;
+
+/**
+ * @section Grayscale
+ * @color Dark Gray
+ */
+$color-darkgray: #4A4A4A;
+
+/**
+ * @section Grayscale
+ * @color Black
+ */
+$color-black: #000000;
 
 /**
  * Because the application is about managing logistics in the easiest way possible, steps are helpful to guide the user through a linear process.
@@ -59,8 +101,16 @@ $gray: #ddd;
  *
  */
  div{
- 	.ui.styled.accordion{ 
+ 	&.ui.styled.accordion{ 
  		box-shadow: none !important;
+ 	}
+ 	&.ui.fluid.vertical.steps{
+ 		border-color: $color-gray !important;
+ 	}
+ 	&.step.completed{
+ 		.title{
+	 		color: $color-gray !important;
+ 		}
  	}
  	&.active.step{
 		background: white !important;
@@ -106,7 +156,9 @@ p{}
  *  	Cool primary button
  * 	</button>
  */
-button{ /*...*/ }
+button.ui.primary.button{ 
+	background-color: $primary !important;
+}
 
 /**
  * @atom Secondary Button
@@ -116,7 +168,9 @@ button{ /*...*/ }
  *  	Cool secondary button
  * 	</button>
  */
-button{ /*...*/ }
+button.ui.button{ 
+	background-color: $color-lightgray !important;
+}
 
 /**
  * @atom Text field
@@ -207,8 +261,13 @@ div{}
  *  <p></p>
  * </div>
  */
-div{}
-
+.ui.secondary.pointing.menu{
+ 	.active.item{
+ 		color: $primary !important;
+ 		border-color: $primary !important;
+ 	}
+ 	color: $color-gray !important;
+}
 
 .App {
 	text-align: center;
