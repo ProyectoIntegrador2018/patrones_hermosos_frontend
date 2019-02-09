@@ -45,97 +45,24 @@ $color-darkgray: #4A4A4A;
  */
 $color-black: #000000;
 
-/**
- * Because the application is about managing logistics in the easiest way possible, steps are helpful to guide the user through a linear process.
- *
- * @structure Steps
- * @markup
- * <div class="ui two column grid">
- *   <div class="column">
- *     <div class="ui fluid vertical steps">
- *       <div class="completed step">
- *         <i class="truck icon"></i>
- *         <div class="content">
- *           <div class="ui styled accordion">
- *  		  <div class="title">
- *  		    <i class="dropdown icon"></i>
- *  		    Choose your location
- *  		  </div>
- *  		  <div class="content">
- *  		    <p class="transition">This might or might not in the future be a form where a user could maybe add or edit their data (just a thought).</p>
- *  		  </div>
- *  		 </div>
- *         </div>
- *       </div>
- *       <div class="completed step">
- *         <i class="truck icon"></i>
- *         <div class="content">
- *           <div class="ui styled accordion">
- *  		  <div class="title">
- *  		    <i class="dropdown icon"></i>
- *  		    Complete your data
- *  		  </div>
- *  		  <div class="content">
- *  		    <p class="transition">This might or might not in the future be a form where a user could maybe add or edit their data (just a thought).</p>
- *  		  </div>
- *  		 </div>
- *         </div>
- *       </div>
- *       <div class="active step">
- *         <i class="file pdf icon"></i>
- *         <div class="content">
- *           <div class="ui styled accordion">
- *  		  <div class="title active">
- *  		    <i class="dropdown icon"></i>
- *  		    Upload your file
- *  		  </div>
- *  		  <div class="content active">
- *  		    <p class="transition">Upload the signed agreement here. It will be reviewed in the future.</p>
- *  		  </div>
- *  		 </div>
- *         </div>
- *       </div>
- *     </div>
- *   </div>
- * </div>
- *
- */
- div{
- 	&.ui.styled.accordion{ 
- 		box-shadow: none !important;
- 	}
- 	&.ui.fluid.vertical.steps{
- 		border-color: $color-gray !important;
- 	}
- 	&.step.completed{
- 		.title{
-	 		color: $color-gray !important;
- 		}
- 	}
- 	&.active.step{
-		background: white !important;
- 	}
- 	&.active.step::after{
-		content: none !important;
- 	}
- 	&.content{
- 		width: 90% !important;
- 	}
- }
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 
 /**
- * Headers should act as dividers of sections without adding too much visual noise to the view. Different sizes and style are used to create this effect. 
- * 
- * @atom Headers
- * @section Text
- * @markup
- * 	<h1 class="ui header">First header</h1>
- * 	<h2 class="ui header">Second header</h2>
- * 	<h3 class="ui header">Third header</h3>
- * 	<h4 class="ui header">Fourth header</h4>
- * 	<h5 class="ui header">Fifth header</h5>
+ * Set the Helvetica font face with an optional font weight.
+ *
+ * @mixin
+ * @section Fonts
+ * @param $weight
+ *  The font weight to be used.
+ * @example
+ *  @include helvetica();
+ *  @include helvetica(300);
  */
-h1,h2,h3,h4,h5{ /*...*/ }
+ @mixin helvetica ( $weight : 400) {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: $weight;
+  }
 
 /**
  * Paragraphs should be plain and simple. Indentation goes to the right for the sake of readability.
@@ -267,6 +194,84 @@ div{}
  		border-color: $primary !important;
  	}
  	color: $color-gray !important;
+}
+
+/**
+ * Because the application is about managing logistics in the easiest way possible, steps are helpful to guide the user through a linear process.
+ *
+ * @structure Steps
+ * @markup
+ * <div class="ui two column grid">
+ *   <div class="column">
+ *     <div class="ui fluid vertical steps">
+ *       <div class="completed step">
+ *         <i class="truck icon"></i>
+ *         <div class="content">
+ *           <div class="ui styled accordion">
+ *  		  <div class="title">
+ *  		    <i class="dropdown icon"></i>
+ *  		    Choose your location
+ *  		  </div>
+ *  		  <div class="content">
+ *  		    <p class="transition">This might or might not in the future be a form where a user could maybe add or edit their data (just a thought).</p>
+ *  		  </div>
+ *  		 </div>
+ *         </div>
+ *       </div>
+ *       <div class="completed step">
+ *         <i class="truck icon"></i>
+ *         <div class="content">
+ *           <div class="ui styled accordion">
+ *  		  <div class="title">
+ *  		    <i class="dropdown icon"></i>
+ *  		    Complete your data
+ *  		  </div>
+ *  		  <div class="content">
+ *  		    <p class="transition">This might or might not in the future be a form where a user could maybe add or edit their data (just a thought).</p>
+ *  		  </div>
+ *  		 </div>
+ *         </div>
+ *       </div>
+ *       <div class="active step">
+ *         <i class="file pdf icon"></i>
+ *         <div class="content">
+ *           <div class="ui styled accordion">
+ *  		  <div class="title active">
+ *  		    <i class="dropdown icon"></i>
+ *  		    Upload your file
+ *  		  </div>
+ *  		  <div class="content active">
+ *  		    <p class="transition">Upload the signed agreement here. It will be reviewed in the future.</p>
+ *  		  </div>
+ *  		 </div>
+ *         </div>
+ *       </div>
+ *     </div>
+ *   </div>
+ * </div>
+ *
+ */
+ div{
+	&.ui.styled.accordion{ 
+		box-shadow: none !important;
+	}
+	&.ui.fluid.vertical.steps{
+		border-color: $color-gray !important;
+	}
+	&.step.completed{
+		.title{
+			color: $color-gray !important;
+		}
+	}
+	&.active.step{
+	   background: white !important;
+	}
+	&.active.step::after{
+	   content: none !important;
+	}
+	&.content{
+		width: 90% !important;
+	}
 }
 
 .App {
