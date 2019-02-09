@@ -42,6 +42,7 @@ You should ask for access to this tools if you don't have it already:
 * [Github repo](https://github.com/ProyectoIntegrador2018/patrones_hermosos_frontend)
 * [Backlog](https://github.com/ProyectoIntegrador2018/patrones_hermosos/projects/1)
 * [Documentation](https://drive.google.com/open?id=1d96uJnjeu13aSVAOIVgP4_Rpif_TdYBF)
+* [Style guide](http://styles-patroneshermosos.surge.sh/index.html)
 
 ## Development
 
