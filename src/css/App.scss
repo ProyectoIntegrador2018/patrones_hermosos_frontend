@@ -4,39 +4,210 @@
 $gray: #ddd;
 
 /**
- * @atom Headers
- * @section Headers
+ * Because the application is about managing logistics in the easiest way possible, steps are helpful to guide the user through a linear process.
+ *
+ * @structure Steps
  * @markup
- *  <h1>Header H1</h1>
- *  <h2>Header H2</h2>
- *  <h3>Header H3</h3>
- *  <h4>Header H4</h4>
+ * <div class="ui two column grid">
+ *   <div class="column">
+ *     <div class="ui fluid vertical steps">
+ *       <div class="completed step">
+ *         <i class="truck icon"></i>
+ *         <div class="content">
+ *           <div class="ui styled accordion">
+ *  		  <div class="title">
+ *  		    <i class="dropdown icon"></i>
+ *  		    Choose your location
+ *  		  </div>
+ *  		  <div class="content">
+ *  		    <p class="transition">This might or might not in the future be a form where a user could maybe add or edit their data (just a thought).</p>
+ *  		  </div>
+ *  		 </div>
+ *         </div>
+ *       </div>
+ *       <div class="completed step">
+ *         <i class="truck icon"></i>
+ *         <div class="content">
+ *           <div class="ui styled accordion">
+ *  		  <div class="title">
+ *  		    <i class="dropdown icon"></i>
+ *  		    Complete your data
+ *  		  </div>
+ *  		  <div class="content">
+ *  		    <p class="transition">This might or might not in the future be a form where a user could maybe add or edit their data (just a thought).</p>
+ *  		  </div>
+ *  		 </div>
+ *         </div>
+ *       </div>
+ *       <div class="active step">
+ *         <i class="file pdf icon"></i>
+ *         <div class="content">
+ *           <div class="ui styled accordion">
+ *  		  <div class="title active">
+ *  		    <i class="dropdown icon"></i>
+ *  		    Upload your file
+ *  		  </div>
+ *  		  <div class="content active">
+ *  		    <p class="transition">Upload the signed agreement here. It will be reviewed in the future.</p>
+ *  		  </div>
+ *  		 </div>
+ *         </div>
+ *       </div>
+ *     </div>
+ *   </div>
+ * </div>
+ *
  */
-h1 {
-  color: #ff0000 !important;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  line-height: 1.28571429em;
-  margin: calc(2rem -  0.14285714em ) 0em 1rem;
-  font-weight: bold;
-  padding: 0em;
-}
+ div{
+ 	.ui.styled.accordion{ 
+ 		box-shadow: none !important;
+ 	}
+ 	&.active.step{
+		background: white !important;
+ 	}
+ 	&.active.step::after{
+		content: none !important;
+ 	}
+ 	&.content{
+ 		width: 90% !important;
+ 	}
+ }
 
 /**
- * @atom Button
- * @section Navigation > Buttons
- * @modifiers
- *  .button--alert an alert button
+ * Headers should act as dividers of sections without adding too much visual noise to the view. Different sizes and style are used to create this effect. 
+ * 
+ * @atom Headers
+ * @section Text
  * @markup
- *  <button class="button">
- *    A button
- *  </button>
- *  <button class="button button--alert">
- *    An alert button
- *  </button>
+ * 	<h1 class="ui header">First header</h1>
+ * 	<h2 class="ui header">Second header</h2>
+ * 	<h3 class="ui header">Third header</h3>
+ * 	<h4 class="ui header">Fourth header</h4>
+ * 	<h5 class="ui header">Fifth header</h5>
  */
-.button {
- &.button--alert { /* ... */ }
-}
+h1,h2,h3,h4,h5{ /*...*/ }
+
+/**
+ * Paragraphs should be plain and simple. Indentation goes to the right for the sake of readability.
+ *
+ * @atom Paragraph
+ * @section Text
+ * @markup
+ * 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ * </p>
+ */
+p{}
+
+/**
+ * @atom Primary Button
+ * @section Buttons
+ * @markup
+ * 	<button class="ui primary button">
+ *  	Cool primary button
+ * 	</button>
+ */
+button{ /*...*/ }
+
+/**
+ * @atom Secondary Button
+ * @section Buttons
+ * @markup
+ * 	<button class="ui button">
+ *  	Cool secondary button
+ * 	</button>
+ */
+button{ /*...*/ }
+
+/**
+ * @atom Text field
+ * @section Input
+ * @markup
+ *  <div class="ui input">
+ *   <input type="text" placeholder="Name">
+ *  </div>
+ */
+div.input{}
+
+/**
+ * It is strongly recommended that the label is always to the right of the checkbox for the sake of readability.
+ *
+ * @atom Checkbox
+ * @section Input
+ * @markup
+ * <form class="ui">
+ *  <div class="ui">
+ *     <div class="none">
+ *      <div class="ui checkbox">
+ *         <input type="checkbox" name="accept" tabindex="0" class="hidden">
+ *         <label>I confirm my attendance to summer camp.</label>
+ *       </div>
+ *     </div>
+ *   </div>
+ * </form>
+ */
+form{}
+
+
+/**
+ * Select control might consider autocomplete to ease the search experience.
+ * @atom Select
+ * @section Input
+ * @markup
+ * <div class="ui form">
+ *  <div class="field">
+ *      <div class="ui selection dropdown">
+ *          <input name="gender">
+ *          <i class="dropdown icon"></i>
+ *          <div class="default text">Gender</div>
+ *          <div class="menu">
+ *              <div class="item" data-value="1">Male</div>
+ *              <div class="item" data-value="0">Female</div>
+ *          </div>
+ *      </div>
+ *  </div>
+ * </div>
+ */
+div{ /*...*/ }
+
+/**
+ * Clickable cards which show an image and a short caption.
+ * 
+ * @molecule Card
+ * @section Container
+ * @markup
+ *  <div class="ui card">
+ *      <div class="image">
+ *        <img src="https://images.adsttc.com/media/images/5ab1/b0ef/f197/cc7d/4900/010e/medium_jpg/Monterrey_Tec_Library_01.jpg?1521594599">
+ *      </div>
+ *      <div class="content">
+ *        <a class="header">Tec de Monterrey</a>
+ *      </div> 
+ *   </div>
+ */
+div{}
+
+/**
+ * Minimalist navigation bar to provide just enough context on where the user stands in the application. 
+ *
+ * @molecule Navigation Bar
+ * @section Bar
+ * @markup
+ *  <div class="ui secondary pointing menu">
+ *   <a class="active item">
+ *    About us
+ *  </a>
+ *  <a class="item">
+ *    Locations
+ *  </a>
+ *  <a class="item">
+ *    News
+ *  </a>
+ * </div>
+ * <div class="ui segment">
+ *  <p></p>
+ * </div>
+ */
+div{}
 
 
 .App {
