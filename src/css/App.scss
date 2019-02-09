@@ -1,7 +1,20 @@
 // @include monospace();
 // @include monospace(300);
-/** @color Solid black */
-$gray: #ddd;
+/** @color Primary Blue */
+$primary: #4357ad;
+
+/** @color Secondary Dark Blue */
+$secondary: #160c28;
+
+/** @color Background White */
+$background: #ffffff;
+
+/** @color Accent Baby Pink */
+$accent-babypink: #dec3be;
+
+/** @color Accent Pink */
+$accent-pink: #c41552;
+
 .App {
 	text-align: center;
 	color: red;
