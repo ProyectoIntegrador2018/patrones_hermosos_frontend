@@ -8,6 +8,7 @@ Aplicación para el manejo de logística del campamento Patrones Hermosos.
 * [Environment URLS](#environment-urls)
 * [Da Team](#team)
 * [Management resources](#management-resources)
+* [What you will need](#what-you-will-need)
 * [Setup the project](#setup-the-project)
 * [Stop the project](#stop-the-project)
 
@@ -20,7 +21,8 @@ Aplicación para el manejo de logística del campamento Patrones Hermosos.
 
 ### Environment URLS
 
-* **Production** - [localhost:3000](https://localhost:3000)
+* **Production - NGINX** - [localhost:3000](https://localhost:3000)
+* **Production - Surge** - [patroneshermosos.surge.sh](http://patroneshermosos.surge.sh)
 * **Development** - [localhost:80](https://localhost:80)
 
 ### Da team
@@ -42,6 +44,22 @@ You should ask for access to this tools if you don't have it already:
 * [Documentation](https://drive.google.com/open?id=1d96uJnjeu13aSVAOIVgP4_Rpif_TdYBF)
 
 ## Development
+
+### What you will need
+
+#### Development
+* [NodeJS - v10.5.1 or above](https://nodejs.org/en/)
+* [React library](https://semantic-ui.com/)
+* [Semantic UI CSS framework](https://semantic-ui.com/)
+* [Sass](https://facebook.github.io/create-react-app/docs/adding-a-sass-stylesheet)
+
+#### Deployment
+* [NGINX](https://nginx.org/)
+* [Surge](https://surge.sh/)
+
+#### Miscellaneous
+* [Nucleus](https://holidaypirates.github.io/nucleus/getting-started.html): Styleguide generator
+* [Gulp](https://www.npmjs.com/package/gulp-download): To run scripts that will automatically run in the background while you make local changes.
 
 ### Setup the project
 
