@@ -2,7 +2,7 @@
 
 Logistics management web application for the Beautiful Patterns summer camp.
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/040a18f37da4894b1265/maintainability)](https://codeclimate.com/github/ProyectoIntegrador2018/patrones_hermosos_frontend/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/040a18f37da4894b1265/maintainability)](https://codeclimate.com/github/ProyectoIntegrador2018/patrones_hermosos_frontend/maintainability) [![Build Status](https://travis-ci.org/ProyectoIntegrador2018/patrones_hermosos_frontend.svg?branch=master)](https://travis-ci.org/ProyectoIntegrador2018/patrones_hermosos_frontend)
 
 ## Table of contents
 
